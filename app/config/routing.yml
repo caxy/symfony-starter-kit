@@ -1,0 +1,6 @@
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+api:
+    resource: '.'
+    type:     'api_platform'
+    prefix:   '/api' # Optional
