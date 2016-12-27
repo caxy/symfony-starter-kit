@@ -1,0 +1,8 @@
+AppBundle\Entity\User:
+    dwnek:
+        username: dwnek
+        email: dwnek@caxy.com
+        plainPassword: 1234
+        enabled: 1
+        locked: 0
+

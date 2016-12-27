@@ -3,10 +3,12 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
 
 /**
  * HipchatConnectionRequest.
  *
+ * @ApiResource
  * @ORM\Table(name="hipchat_connection_requests")
  * @ORM\Entity
  */

@@ -32,7 +32,6 @@ class User extends BaseUser
 
     /**
      * @ORM\Column(name="jira_access_token", type="string", length=255, nullable=true)
-     * @Assert\NotBlank
      */
     protected $jiraAccessToken;
 
@@ -53,7 +52,7 @@ class User extends BaseUser
     /**
      * @var string
      *
-     * @ORM\Column(name="jira_email", type="string", length=255)
+     * @ORM\Column(name="jira_email", type="string", length=255, nullable=true)
      */
     private $jiraEmail;
 

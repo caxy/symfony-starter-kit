@@ -4,10 +4,12 @@ namespace AppBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
 
 /**
  * DateEventGroup.
  *
+ * @ApiResource
  * @ORM\Table(name="date_event_group")
  * @ORM\Entity
  */

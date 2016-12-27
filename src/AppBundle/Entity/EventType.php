@@ -3,10 +3,12 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Core\Annotation\ApiResource;
 
 /**
  * EventType.
  *
+ * @ApiResource
  * @ORM\Table(name="event_type")
  * @ORM\Entity
  */

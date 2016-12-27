@@ -4,10 +4,12 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use DateTime;
+use ApiPlatform\Core\Annotation\ApiResource;
 
 /**
  * AdminNote.
  *
+ * @ApiResource
  * @ORM\Table(name="admin_note")
  * @ORM\Entity
  */

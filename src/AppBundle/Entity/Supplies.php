@@ -4,10 +4,12 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use DateTime;
+use ApiPlatform\Core\Annotation\ApiResource;
 
 /**
  * Supplies.
  *
+ * @ApiResource
  * @ORM\Table(name="supplies")
  * @ORM\Entity
  */
