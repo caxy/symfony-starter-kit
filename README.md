@@ -1,18 +1,26 @@
-wtf-api
+symfony-starter-kit
 =======
 
-Decoupled-backend for Caxy's WTF Application
+Decoupled-backend Starter Kit to use with Angular front-end decoupled project
+
 
 ###Getting Started
 
 ###1. Clone Repo
 ```
-git clone git@github.com:caxy/wtf-api.git
+git clone --bare git@github.com:caxy/symfony-starter-kit.git
+cd symfony-starter-kit
+git push --mirror {NEW_GITHUB_REPO_LINK}
+cd ../
+rm -rf symfony-starter-kit
+
+git clone {NEW_GITHUB_REPO_LINK}
+cd {NEW_REPO_NAME}
+
 ```
 
 ###2. Install Packages & fill-out parameters
 ```
-cd wtf-api
 composer install
 bash dev-setup.sh
 ```
@@ -64,13 +72,7 @@ RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
 ```
 
 ###7. Confirm
-   
-   Run the Symfony check script:
-   
-   ```bash
-   php app/check.php
-   ```
-   
+
    Run the Symfony built in web server with highest verbosity.
    
    ```bash
@@ -112,5 +114,3 @@ RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
    Do not confuse this with localhost:8000/api, they are separate, and will not function without the JWT Token.
    
    Once on localhost:8000/api/doc?bearer={INSERT TOKEN HERE}, You need to set the token again in the input in the upper right where it says 'api key:' and press save. Then you can start using endpoints.
-   
-   
