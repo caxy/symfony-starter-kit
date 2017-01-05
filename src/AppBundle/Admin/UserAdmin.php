@@ -11,7 +11,6 @@ use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
 class UserAdmin extends AbstractAdmin
 {
-
     protected function configureFormFields(FormMapper $mapper)
     {
         $mapper
@@ -25,7 +24,7 @@ class UserAdmin extends AbstractAdmin
                     'ROLE_SUPER_ADMIN' => 'ROLE_SUPER_ADMIN',
                 ),
                 'expanded' => true,
-                'multiple' => true
+                'multiple' => true,
             ))
         ;
     }
@@ -41,7 +40,7 @@ class UserAdmin extends AbstractAdmin
                     'show' => array(),
                     'edit' => array(),
                     'delete' => array(),
-                )
+                ),
             ))
         ;
     }

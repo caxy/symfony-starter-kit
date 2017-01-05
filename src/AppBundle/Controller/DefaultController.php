@@ -15,7 +15,7 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        if($this->isGranted(User::ROLE_DEFAULT)) {
+        if ($this->isGranted(User::ROLE_DEFAULT)) {
             return $this->redirectToRoute('sonata_admin_dashboard');
         } else {
             return $this->redirectToRoute('fos_user_security_login');
