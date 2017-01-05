@@ -8,3 +8,7 @@ api:
 
 api_login_check:
     path: /api/login_check
+
+admin_area:
+    resource: "@SonataAdminBundle/Resources/config/routing/sonata_admin.xml"
+    prefix: /admin
