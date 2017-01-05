@@ -15,3 +15,7 @@
 /vendor/
 /web/bundles/
 /bower_components/
+!var/jwt
+var/jwt/*
+!var/jwt/private-test.pem
+!var/jwt/public-test.pem
