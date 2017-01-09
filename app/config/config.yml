@@ -116,3 +116,20 @@ nelmio_api_doc:
         authentication:
             delivery: http
             type: bearer
+
+nelmio_cors:
+    defaults:
+        max_age: 3600
+    paths:
+        '^/resetting/send-email$':
+            allow_origin: ['*']
+            allow_headers: ['content-type']
+            allow_methods: ['POST', 'OPTIONS']
+        '^/api/':
+            allow_origin: ['*']
+            allow_headers: ['X-Custom-Auth', 'Authorization', 'accept', 'content-type']
+            allow_methods: ['PATCH', 'POST', 'PUT', 'GET', 'DELETE', 'OPTIONS']
+        '^/token$':
+            allow_origin: ['*']
+            allow_headers: ['X-Custom-Auth', 'Authorization', 'accept', 'content-type']
+            allow_methods: ['POST', 'GET', 'OPTIONS']
