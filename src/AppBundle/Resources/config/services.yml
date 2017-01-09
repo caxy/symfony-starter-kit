@@ -1,0 +1,6 @@
+services:
+    app.event.jwt_created_listener:
+        class: AppBundle\EventListener\JWTCreatedListener
+        arguments: [ '@request_stack', '@fos_user.user_manager' ]
+        tags:
+            - { name: kernel.event_listener, event: lexik_jwt_authentication.on_jwt_created, method: onJWTCreated }

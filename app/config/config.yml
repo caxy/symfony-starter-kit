@@ -78,7 +78,6 @@ fos_user:
     user_class: AppBundle\Entity\User
 
 api_platform:
-    # ...
     enable_nelmio_api_doc: true
 
 lexik_jwt_authentication:
@@ -129,7 +128,3 @@ nelmio_cors:
             allow_origin: ['*']
             allow_headers: ['X-Custom-Auth', 'Authorization', 'accept', 'content-type']
             allow_methods: ['PATCH', 'POST', 'PUT', 'GET', 'DELETE', 'OPTIONS']
-        '^/token$':
-            allow_origin: ['*']
-            allow_headers: ['X-Custom-Auth', 'Authorization', 'accept', 'content-type']
-            allow_methods: ['POST', 'GET', 'OPTIONS']

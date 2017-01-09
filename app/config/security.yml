@@ -11,6 +11,9 @@ security:
             id: fos_user.user_provider.username
 
     firewalls:
+        dev:
+            pattern:  ^/api/(_(profiler|wdt|doc))/
+            security: false
 
         login:
             pattern:  ^/api/login
@@ -18,6 +21,7 @@ security:
             anonymous: true
             form_login:
                 check_path:               /api/login_check
+                require_previous_session: false
                 success_handler:          lexik_jwt_authentication.handler.authentication_success
                 failure_handler:          lexik_jwt_authentication.handler.authentication_failure
                 require_previous_session: false
@@ -25,9 +29,16 @@ security:
         api:
             pattern:   ^/api
             stateless: true
-            guard:
-                authenticators:
-                    - lexik_jwt_authentication.jwt_token_authenticator
+#            guard:
+#                authenticators:
+#                    - lexik_jwt_authentication.jwt_token_authenticator
+            lexik_jwt:
+                authorization_header:
+                    enabled: true
+                    prefix:  Bearer
+                query_parameter:
+                    enabled: true
+                    name:    bearer
 
         main:
             pattern: ^/

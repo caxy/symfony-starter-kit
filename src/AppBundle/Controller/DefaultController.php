@@ -22,13 +22,4 @@ class DefaultController extends Controller
             return $this->redirectToRoute('fos_user_security_login');
         }
     }
-
-    /**
-     * @Route("/token", name="api_login")
-     */
-    public function getTokenAction()
-    {
-        // The security layer will intercept this request
-        return new Response('', 401);
-    }
 }
