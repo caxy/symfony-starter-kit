@@ -128,3 +128,7 @@ nelmio_cors:
             allow_origin: ['*']
             allow_headers: ['X-Custom-Auth', 'Authorization', 'accept', 'content-type']
             allow_methods: ['PATCH', 'POST', 'PUT', 'GET', 'DELETE', 'OPTIONS']
+        '^/auth/signup$':
+            allow_origin: ['*']
+            allow_headers: ['X-Custom-Auth', 'Authorization', 'accept', 'content-type']
+            allow_methods: ['PATCH', 'POST', 'PUT', 'GET', 'DELETE', 'OPTIONS']

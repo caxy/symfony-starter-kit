@@ -18,7 +18,7 @@ _sonata_admin:
     type: sonata_admin
     prefix: /admin
 
-app:
+app_controller:
     resource: "@AppBundle/Controller"
     type: annotation
     prefix: /
