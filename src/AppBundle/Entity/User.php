@@ -63,7 +63,7 @@ class User extends BaseUser
     /**
      * @return string
      */
-    public function getFirstName(): string
+    public function getFirstName()
     {
         return $this->firstName;
     }
@@ -72,7 +72,7 @@ class User extends BaseUser
      * @param string $firstName
      * @return User
      */
-    public function setFirstName(string $firstName): User
+    public function setFirstName(string $firstName)
     {
         $this->firstName = $firstName;
         return $this;
@@ -81,7 +81,7 @@ class User extends BaseUser
     /**
      * @return string
      */
-    public function getLastName(): string
+    public function getLastName()
     {
         return $this->lastName;
     }
@@ -90,7 +90,7 @@ class User extends BaseUser
      * @param string $lastName
      * @return User
      */
-    public function setLastName(string $lastName): User
+    public function setLastName(string $lastName)
     {
         $this->lastName = $lastName;
         return $this;

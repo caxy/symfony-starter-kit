@@ -50,11 +50,10 @@ class DefaultController extends Controller
         }
 
         $salt = rtrim(str_replace('+', '.', base64_encode(random_bytes(32))), '=');
-        dump($salt);
+
         $user->setSalt($salt);
 
         $userManager->updateUser($user, true);
-
 
         /** @var $dispatcher EventDispatcherInterface */
         $dispatcher = $this->get('event_dispatcher');
