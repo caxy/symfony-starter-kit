@@ -19,3 +19,5 @@
 var/jwt/*
 !var/jwt/private-test.pem
 !var/jwt/public-test.pem
+node_modules/
+npm-debug.log
