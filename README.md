@@ -76,7 +76,7 @@ RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
    Run the Symfony built in web server with highest verbosity.
    
    ```bash
-   app/console server:run -vvv
+   bin/console server:run -vvv
    ```
    
    Then run a command that should return an authentication error:
