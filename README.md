@@ -8,7 +8,7 @@ Decoupled-backend Starter Kit to use with Angular front-end decoupled project
 ###1. Clone Repo
 ```
 git clone --bare git@github.com:caxy/symfony-starter-kit.git
-cd symfony-starter-kit
+cd symfony-starter-kit.git/
 git push --mirror {NEW_GITHUB_REPO_LINK}
 cd ../
 rm -rf symfony-starter-kit
