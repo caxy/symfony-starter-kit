@@ -1,6 +1,6 @@
 {
-    "name": "dwnek/wtf-api",
-    "license": "proprietary",
+    "name": "caxy/symfony-starter-kit",
+    "license": "MIT",
     "type": "project",
     "autoload": {
         "psr-4": {
